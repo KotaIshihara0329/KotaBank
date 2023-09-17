@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Call no ringing -->
+    <title>KotaBank</title>
+    <meta name="description" content="Making Bank for practice" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="KotaBank" />
+    <meta property="og:description" content="Making Bank for practice" />
+    <meta property="og:url" content="http://kotabank.com" />
+    <meta property="og:image" content="http://kotabank.com/img" />
+    <meta property="og:site-name" content="KotaBank" />
+    <!-- <meta property="fb:app_id" content="341936793781437" /> -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:country-name" content="japan" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-icon.png" />
+    <!-- Under this place, it could be changeable. -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="sass/style.css" />
+  </head>
+  <body>
+    <header class="p-header">
+      <div class="p-header__wrap">
+        <h1 class="p-header__h1">Kotabank</h1>
+        <p class="p-header__description">
+          You can deposit and withdraw money anywhere and anytime!&#128513;
+        </p>
+      </div>
+    </header>
+    <main class="container p-home">
+      <div class="p-home__create-group">
+        <div class="p-home__create">
+          <input
+            type="text"
+            class="p-home__input"
+            id="userInput"
+            placeholder="Enter your name"
+          />
+          <input
+            type="number"
+            class="p-home__input"
+            id="pinInput"
+            placeholder="Enter your PIN"
+          />
+          <button id="createAccountButton" class="p-home__button">
+            Create an account
+          </button>
+        </div>
+        <br />
+        <br />
+        <hr class="p-home__hr" />
+        <br />
+        <div class="p-home__create">
+          <p class="p-home__user">Welcome: <span id="userName"></span></p>
+        </div>
+        <div class="p-home__create">
+          <input type="number" class="p-home__input" id="depositInput" />
+          <button class="p-home__button" id="depositButton">Deposit</button>
+        </div>
+        <div class="p-home__create">
+          <input type="number" class="p-home__input" id="withdrawInput" />
+          <button class="p-home__button" id="withdrawButton">Withdraw</button>
+        </div>
+        <div class="p-home__create">
+          <p class="p-home__user">
+            Current Savings: $<span id="userSaving"></span>
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="p-footer">
+      <p class="p-footer__credit">&copy; 2023 KotaBank</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

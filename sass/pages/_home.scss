@@ -1,0 +1,58 @@
+.p-home {
+  height: 100vh;
+  &__create-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  &__create {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5rem;
+  }
+
+  &__input {
+    width: 20rem;
+    height: 5rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid cadetblue;
+    padding: 1rem;
+  }
+
+  &__button {
+    cursor: pointer;
+    width: 20rem;
+    height: 5rem;
+    padding: 1rem;
+    outline: none;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+      transition: all 0.3s;
+    }
+  }
+
+  &__hr {
+    width: 100vw;
+    height: 1px;
+    background-color: $color-black;
+  }
+
+  &__user {
+    font-size: 2rem;
+    color: $color-black;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  max-width: 80rem;
+  padding-right: 1.4rem;
+  padding-left: 1.4rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+// この場合、widthは1156pxとなる。なので、paddingを抜いてカウントしよう。
+// 基本的に、1080px - 1440 px
