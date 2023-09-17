@@ -173,14 +173,6 @@ body {
   color: #1c1c1c;
 }
 
-@font-face {
-  font-family: "小塚ゴシック Pr6N";
-  src: url("../font/pr6n.woff") format("woff");
-  src: url("../font/pr6n.otf") format("otf");
-  src: url("../font/pr6n.ttf") format("truetype");
-  font-weight: 400;
-}
-
 .container {
   width: 100%;
   max-width: 80rem;
