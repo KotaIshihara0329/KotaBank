@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/KotaIshihara0329/KotaBank#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.5"
   }
 }
